@@ -5,6 +5,9 @@
 const path = require('path')
 
 module.exports = {
+  {{#sass}}
+  globalSassFileList: [],
+  {{/sass}}
   dev: {
 
     // Paths

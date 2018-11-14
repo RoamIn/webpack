@@ -31,7 +31,7 @@ module.exports = {
       return templateVersion
     },
   },
-  
+
   prompts: {
     name: {
       when: 'isNotTest',
@@ -68,6 +68,16 @@ module.exports = {
           short: 'runtime',
         },
       ],
+    },
+    sass: {
+        when: 'isNotTest',
+        type: 'confirm',
+        message: 'Use sass?',
+    },
+    mobile: {
+        when: 'isNotTest',
+        type: 'confirm',
+        message: 'Is mobile?',
     },
     router: {
       when: 'isNotTest',
