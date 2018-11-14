@@ -5,10 +5,14 @@
 const path = require('path')
 
 module.exports = {
-  {{#sass}}
+  {{#sass}} // Use Sass ?
   globalSassFileList: [],
   {{/sass}}
   dev: {
+    {{#mobile}} // Is mobile ?
+    // config
+    needConsole: true,
+    {{/mobile}}
 
     // Paths
     assetsSubDirectory: 'static',

@@ -72,7 +72,7 @@ module.exports = {
     sass: {
         when: 'isNotTest',
         type: 'confirm',
-        message: 'Use sass?',
+        message: 'Use Sass?',
     },
     mobile: {
         when: 'isNotTest',

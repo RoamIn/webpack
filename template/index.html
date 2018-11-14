@@ -8,5 +8,11 @@
   <body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    {{#mobile}}
+    <% if(htmlWebpackPlugin.options.needConsole){ %>
+    <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+    <script>eruda.init();</script>
+    <% } %>
+    {{/mobile}}
   </body>
 </html>
