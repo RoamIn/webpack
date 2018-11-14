@@ -40,6 +40,19 @@ exports.cssLoaders = function (options) {
           sourceMap: options.sourceMap
         })
       })
+
+      {{#sass}}
+      if (loader === 'sass') {
+        loaders.push({
+          loader: 'sass-resources-loader',
+          options: {
+            resources: [
+              ...config.globalSassFileList
+            ]
+          }
+        })
+      }
+      {{/sass}}
     }
 
     // Extract CSS when that option is specified
